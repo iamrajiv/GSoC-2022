@@ -19,6 +19,7 @@ Project Link: [https://github.com/keptn-sandbox/new-keptn-docs-engine](https://g
 
 - [GSoC 2022 Project Proposal](GSoC_2022_Project_Proposal)
 - [GSoC 2022 Meetings](GSoC_2022_Meetings)
+- [GSoC 2022 Work Summary](GSoC_2022_Work_Summary.md)
 
 ## References
 
@@ -29,6 +30,7 @@ Project Link: [https://github.com/keptn-sandbox/new-keptn-docs-engine](https://g
 - [https://keptn-docusaurus-poc.vercel.app/](https://keptn-docusaurus-poc.vercel.app/)
 - [https://keptn.sh/](https://keptn.sh/)
 - [Meetings](https://docs.google.com/document/d/1pgI0XW3T9wIix70OZsQ2F-9cGtLmXH1jkyhXm4v-RV0/edit#heading=h.xbcx68nc01mi)
+- [New Documentation Site Engine Issue link](https://github.com/wechaty/docusaurus/issues/1012)
 - [Project detail at Keptn Community repository](https://github.com/keptn/community/tree/main/mentorship/gsoc/2022/projects/new-docs-site-engine)
 - [Project page at GSoC 2022 website](https://summerofcode.withgoogle.com/programs/2022/projects/whEHkPZx)
 - [Restructure documentation](https://docs.google.com/document/d/12xVgFSV5Q7keDXOqVFE8pqY0Qkhq--nKsP-7NkVuyjA/edit#heading=h.vm22oe3mkivh)

@@ -222,7 +222,7 @@ I have divided the Development Phase into two phases i.e. `Phase 1` and `Phase 2
 
 > **Week 1 - Week 6 (June 13 - July 25, 2022)**
 
-- Initialization of the documentation engine which is finalized from scratch.
+- Initialization of the documentation engine based on Docusaurus from scratch.
 - Making a list of things that need to move from the current documentation engine to the new documentation engine with proper structure.
 - Implementing UI and UX changes that have been discussed in the community bonding period.
 - Creating standalone pages for `Why Keptn`, `Docs`, `Community`, `Resources`, `Tutorials`, `Integrations`, etc in the Docusaurus engine.

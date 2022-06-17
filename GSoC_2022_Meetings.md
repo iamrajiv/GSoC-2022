@@ -11,7 +11,9 @@ Meetings
 </h3>
 </div>
 
-## **3rd June 2022**
+## 17th June 2022
+
+## 3rd June 2022
 
 - Attendees
   - Rajiv Singh
@@ -20,7 +22,7 @@ Meetings
 - Updates about work that we discussed last week
 - Suraj gave knowledge transfer to Rajiv about Keptn docs and Keptn CLI
 
-## **26 May 2022 (Kickoff meeting)**
+## 26 May 2022 (Kickoff meeting)
 
 - Attendees
   - Indermohan Singh
