@@ -13,6 +13,14 @@ Meetings
 
 ## 17th June 2022
 
+- Attendees
+  - Indermohan Singh
+  - Meg McRoberts
+  - Rajiv Singh
+- Rajiv shared the progress of the doc engine and initialization of the Docusaurus site
+- Indermohan will make an issue with the restructuring of docs
+- Discussion on what contents and section we have to move to Docusaurus at starting phase of the project
+
 ## 3rd June 2022
 
 - Attendees
