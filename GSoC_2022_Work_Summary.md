@@ -25,9 +25,9 @@ Subtask
 
 - [x] Initialization of the documentation engine based on Docusaurus from scratch.
 
-  - [x] Initialise the new Docusaurus site using `npx create-docusaurus@latest new-keptn-docs-engine classic` command and push the changes to [keptn-sandbox/new-keptn-docs-engine](https://github.com/keptn-sandbox/new-keptn-docs-engine).
+  - [x] Initialised the new Docusaurus site using `npx create-docusaurus@latest new-keptn-docs-engine classic` command and push the changes to [keptn-sandbox/new-keptn-docs-engine](https://github.com/keptn-sandbox/new-keptn-docs-engine).
 
-  > Above task is done and I have pushed the changes directly to the repository.
+  > Above task is done and I have pushed the changes directly to the repository. Commit can be found here [https://github.com/keptn-sandbox/new-keptn-docs-engine/commit/e2f2202b01894806e1d9e924d97abb2b98b2d8d1](https://github.com/keptn-sandbox/new-keptn-docs-engine/commit/e2f2202b01894806e1d9e924d97abb2b98b2d8d1).
 
 - [x] Adding as basic documentation on how to use Docusaurus and what configuration of Docusaurus we are following like Project structure, Templates, etc.
 
@@ -39,14 +39,24 @@ Subtask
 
 - [x] Adding `CONTRIBUTING.md` file with content related to how to add contents in Docusaurus and how to use it concerning Keptn. Also, this work will go on since we will be adding more content in the future according to documentation needs.
 
-- [ ] Making a list of things that need to move from the current documentation engine to the new documentation engine with proper structure.
-- [ ] Implementing UI and UX changes that have been discussed in the community bonding period.
-- [ ] Creating standalone pages for `Why Keptn`, `Docs`, `Community`, `Resources`, `Tutorials`, `Integrations`, etc in the Docusaurus engine.
-- [ ] Adding documentation search functionality to the documentation engine with [Algolia DocSearch](https://docsearch.algolia.com/) integration.
+---
+
+- [x] Implementing UI and UX changes in the documentation engine like creating components, templates, standalone pages, etc.
+
+> Created the new components, templates, standalone pages, etc for the documentation engine. I had refactored the default components and templates of the Docusaurus site which were added when the Docusaurus site was initialized.
+
+> Above task is done and I have pushed the changes directly to the repository. Commit can be found here [https://github.com/keptn-sandbox/new-keptn-docs-engine/commit/b749bbdfebfeaa41c789cd4c91ac29032ac1bbfa](https://github.com/keptn-sandbox/new-keptn-docs-engine/commit/b749bbdfebfeaa41c789cd4c91ac29032ac1bbfa).
+
+- [x] Finalizing the things that need to move from the current documentation engine to the new documentation engine with proper structure.
+
+- [ ] Moving content from the current documentation engine to the new documentation engine which has been finalized.
+
+---
+
 - [ ] Adding Versioning of docs support feature.
 - [ ] Adding Multiple repository docs support feature.
-- [ ] Moving content from the current doc site to the new doc site.
 - [ ] Adding internationalization ([i18n](https://en.wikipedia.org/wiki/Internationalization_and_localization)) support. A possible translation strategy is to version control the translation files with Git (or any other VCS).
+- [ ] Adding documentation search functionality to the documentation engine with [Algolia DocSearch](https://docsearch.algolia.com/) integration.
 - [ ] Implementing all SEO approaches listed in [https://docusaurus.io/docs/seo](https://docusaurus.io/docs/seo) like adding metadata in site configuration, adding metadata for all single pages, adding metadata in the front matter of all markdown files, etc.
 
 #### Phase 2
