@@ -222,27 +222,21 @@ I have divided the Development Phase into two phases i.e. `Phase 1` and `Phase 2
 
 > **Week 1 - Week 6 (June 13 - July 25, 2022)**
 
-- Initialization of the documentation engine based on Docusaurus from scratch.
-- Making a list of things that need to move from the current documentation engine to the new documentation engine with proper structure.
-- Implementing UI and UX changes that have been discussed in the community bonding period.
-- Creating standalone pages for `Why Keptn`, `Docs`, `Community`, `Resources`, `Tutorials`, `Integrations`, etc in the Docusaurus engine.
-- Adding documentation search functionality to the documentation engine with [Algolia DocSearch](https://docsearch.algolia.com/) integration.
-- Adding Versioning of docs support feature.
-- Adding Multiple repository docs support feature.
-- Moving content from the current doc site to the new doc site.
-- Adding internationalization ([i18n](https://en.wikipedia.org/wiki/Internationalization_and_localization)) support. A possible translation strategy is to version control the translation files with Git (or any other VCS).
-- Implementing all SEO approaches listed in [https://docusaurus.io/docs/seo](https://docusaurus.io/docs/seo) like adding metadata in site configuration, adding metadata for all single pages, adding metadata in the front matter of all markdown files, etc.
+- [x] [Initialization and deployment of the documentation engine based on Docusaurus from scratch](https://github.com/keptn-sandbox/new-keptn-docs-engine/issues/2)
+- [x] [Adding UI and UX changes and moving the content to the new documentation engine](https://github.com/keptn-sandbox/new-keptn-docs-engine/issues/5)
+- [ ] Adding Versioning of docs support feature
+- [ ] Adding Multiple repository docs support feature
+- [ ] Implementing all SEO approaches listed in [https://docusaurus.io/docs/seo](https://docusaurus.io/docs/seo) like adding metadata in site configuration, adding metadata for all single pages, adding metadata in the front matter of all markdown files, etc.
+- [ ] Adding internationalization ([i18n](https://en.wikipedia.org/wiki/Internationalization_and_localization)) support. A possible translation strategy is to version control the translation files with Git (or any other VCS).
 
 #### Phase 2
 
 > **Week 7 - Week 12 (July 26 - September 5, 2022)**
 
 - Adding [Vale](https://github.com/errata-ai/vale) linter or equivalent linter for doc quality checks.
-- Adding [Prettier](https://prettier.io/) GitHub Action support to format markdown docs whenever there is a pull request or push towards the `master` branch.
-- Adding other GitHub Action to check broken links, spelling mistakes, check code style, etc.
-- Adding GitHub workflows for continuous deployment of the website to GitHub Pages, Netlify, Vercel, etc.
-- Implementing previews for the website and support for staging changes (e.g. pre-release documentation).
+- Adding [Prettier](https://prettier.io/) GitHub Action support to format markdown docs.
 - Integrating [Lighthouse](https://developers.google.com/web/tools/lighthouse) in the docs engine to check the quality of the documentation. We will be able to audit the performance, accessibility, SEO, etc of the doc site.
+- Adding other GitHub Action to check broken links, spelling mistakes, check code style, etc.
 - Finalizing the project deliverables and refactoring the code if any, based on the feedback.
 - Making the project report and requesting mentors to review the project report.
 - Finalizing and submitting the project report and other related documents.

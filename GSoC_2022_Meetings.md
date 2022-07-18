@@ -11,12 +11,47 @@ Meetings
 </h3>
 </div>
 
+## 15th July 2022
+
+- Attendees
+  - Rajiv Ranjan Singh
+  - Suraj Banakar
+- Suraj
+  - Demo in GSoC Community meeting
+    - Rajiv is going to prepare a presentation
+    - If all the PRs don’t get merged, we demo Rajiv’s branch. That being said let’s try to get all of his PRs merged
+  - Rajiv needs review on [https://github.com/keptn-sandbox/new-keptn-docs-engine/pull/9/files](https://github.com/keptn-sandbox/new-keptn-docs-engine/pull/9/files)
+  - There’s one more PR around versioning which Rajiv is going to create
+  - Rajiv will reach out to the team for input on multi-repo support
+  - Rajiv is going to work on the presentation for the GSoC Community meeting
+
+## 1st July 2022
+
+- Attendees
+  - Indermohan Singh
+  - Meha Bhalodiya
+  - Rajiv Ranjan Singh
+  - Suraj Banakar
+- Rajiv
+  - Migrating content from Hugo to Docusaurus leads to issues with CSS and some Hugo-specific constructs which can’t be used in Docusaurus
+- Suraj
+  - Adding SEO tags sounds like a lot of manual work
+- Indermohan
+  - Add Indermohan and Suraj for PRs with technical things
+  - Add Meg as a reviewer for PRs around structuring, writing, or anything where you need input on how content should be written or structured
+- Todo
+  - Indermohan: Create Github issues around the problems we see in the migrated content
+  - Mentors: Ask Oleg/Community if we want to enable i18n support now or later
+  - Indermohan: Create a Github issue to research around front matter linting
+  - Rajiv: Ask for early feedback for [https://keptn-experimental-docs-site.netlify.app/quickstart/quickstart](https://keptn-experimental-docs-site.netlify.app/quickstart/quickstart)
+  - Indermohan: Create an issue around multiple docusaurus instances like [this](https://github.com/keptn-sandbox/new-keptn-docs-engine/blob/a4115b723125e456917b5d0281387255b6a02517/docusaurus.config.js#L92-L149)
+
 ## 17th June 2022
 
 - Attendees
   - Indermohan Singh
   - Meg McRoberts
-  - Rajiv Singh
+  - Rajiv Ranjan Singh
 - Rajiv shared the progress of the doc engine and initialization of the Docusaurus site
 - Indermohan will make an issue with the restructuring of docs
 - Discussion on what contents and section we have to move to Docusaurus at starting phase of the project
@@ -24,7 +59,7 @@ Meetings
 ## 3rd June 2022
 
 - Attendees
-  - Rajiv Singh
+  - Rajiv Ranjan Singh
   - Suraj Banakar
 - Discussion about Rajiv's work and what he did and explore things related to Keptn docs last week
 - Updates about work that we discussed last week
@@ -35,12 +70,12 @@ Meetings
 - Attendees
   - Indermohan Singh
   - Meg McRoberts
-  - Rajiv Singh
+  - Rajiv Ranjan Singh
   - Suraj Banakar
 - Introductions
   - Indermohan Singh
   - Meg McRoberts
-  - Rajiv Singh
+  - Rajiv Ranjan Singh
   - Suraj Banakar
 - Communication
   - Scheduled meetings

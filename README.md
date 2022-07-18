@@ -23,7 +23,7 @@ Project Link: [https://github.com/keptn-sandbox/new-keptn-docs-engine](https://g
 
 ## References
 
-- [Contributor Proposal link](https://summerofcode.withgoogle.com/media/user/f68762051013/proposal/MSNPBfHdA0H2Ddsf.pdf)
+- [Contributor Proposal link](https://summerofcode.withgoogle.com/media/user/f68762051013/proposal/gAAAAABi0UGONyZn75F5er2wzPKT97f5WEz8mItroZ8HJlNr-SuCyAey-bB1i8pBx7exjLDEbgiKZUN7_54IVd3DgSodccoyuCrlBrHuWs1m6oAvCr2oiNk=.pdf)
 - [Doc Tools Requirements](https://docs.google.com/document/d/1VvDtVW-zV8bfhHNrXBNZdJz5s81a1M1eulov8_ahqo0/edit#heading=h.fyeyfl7x8jho)
 - [GitHub Project board](https://github.com/keptn-sandbox/new-keptn-docs-engine/projects/1)
 - [https://github.com/iamrajiv/keptn-docusaurus-poc](https://github.com/iamrajiv/keptn-docusaurus-poc)
