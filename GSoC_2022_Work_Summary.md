@@ -67,7 +67,9 @@ Subtask
 
 ---
 
-- [ ] Adding Versioning of docs support feature.
+- [x] Adding Versioning of docs support feature.
+
+  > PR related to adding versioning support can be found here [https://github.com/keptn-sandbox/new-keptn-docs-engine/pull/10](https://github.com/keptn-sandbox/new-keptn-docs-engine/pull/10).
 
 ---
 

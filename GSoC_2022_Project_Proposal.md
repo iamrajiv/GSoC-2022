@@ -224,7 +224,7 @@ I have divided the Development Phase into two phases i.e. `Phase 1` and `Phase 2
 
 - [x] [Initialization and deployment of the documentation engine based on Docusaurus from scratch](https://github.com/keptn-sandbox/new-keptn-docs-engine/issues/2)
 - [x] [Adding UI and UX changes and moving the content to the new documentation engine](https://github.com/keptn-sandbox/new-keptn-docs-engine/issues/5)
-- [ ] Adding Versioning of docs support feature
+- [x] [Adding Versioning of docs support feature](https://github.com/keptn-sandbox/new-keptn-docs-engine/pull/10)
 - [ ] Adding Multiple repository docs support feature
 - [ ] Implementing all SEO approaches listed in [https://docusaurus.io/docs/seo](https://docusaurus.io/docs/seo) like adding metadata in site configuration, adding metadata for all single pages, adding metadata in the front matter of all markdown files, etc.
 - [ ] Adding internationalization ([i18n](https://en.wikipedia.org/wiki/Internationalization_and_localization)) support. A possible translation strategy is to version control the translation files with Git (or any other VCS).
