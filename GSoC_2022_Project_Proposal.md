@@ -81,7 +81,7 @@ Keptn is an event-driven orchestration engine for cloud-native apps. Started in 
 
 ## Problem Statement
 
-Making a **New Documentation Site Engine** for Keptn which can handle a large number of documentations projects of Keptn.
+Making a **New Documentation Site Engine** for Keptn which can handle a large number of documentation projects of Keptn.
 
 **Open Issue:** [https://github.com/keptn/keptn.github.io/issues/994](https://github.com/keptn/keptn.github.io/issues/994)
 
@@ -159,7 +159,7 @@ Some of the ways we can achieve Multiple repository docs support by following wa
 - Using [https://github.com/rdilweb/docusaurus-plugin-remote-content](https://github.com/rdilweb/docusaurus-plugin-remote-content). It is a Docusaurus v2 plugin to download content from remote sources when it is needed. With this plugin, we can write the markdown for our content somewhere else, and use them on your Docusaurus site, without copying and pasting.
 - We can also use [https://zerodevx.github.io/zero-md/basic-usage/](https://zerodevx.github.io/zero-md/basic-usage/) to render markdown files inside other markdown files or JS files.
 
-I am able to implement the zero-md approach and pull docs from other repositories. I have used HTML code to pull docs from other repositories. We just have to put this code in respective markdown files and provide the suitable URL of the markdown which we want to pull.
+I was able to implement the zero-md approach and pull docs from other repositories. I have used HTML code to pull docs from other repositories. We just have to put this code in respective markdown files and provide the suitable URL of the markdown which we want to pull.
 
 For e.g. In the [keptn-docusaurus-poc](https://keptn-docusaurus-poc.vercel.app/) I have used zero-md and pulled the [https://github.com/keptn/keptn/blob/master/MAINTAINERS](https://github.com/keptn/keptn/blob/master/MAINTAINERS) file to [https://keptn-docusaurus-poc.vercel.app/docs/next/maintainers](https://keptn-docusaurus-poc.vercel.app/docs/next/maintainers).
 
@@ -235,7 +235,7 @@ I have divided the Development Phase into two phases i.e. `Phase 1` and `Phase 2
 
 - Adding [Vale](https://github.com/errata-ai/vale) linter or equivalent linter for doc quality checks.
 - Adding [Prettier](https://prettier.io/) GitHub Action support to format markdown docs.
-- Integrating [Lighthouse](https://developers.google.com/web/tools/lighthouse) in the docs engine to check the quality of the documentation. We will be able to audit the performance, accessibility, SEO, etc of the doc site.
+- Integrating [Lighthouse](https://developers.google.com/web/tools/lighthouse) CI in the docs engine to check the quality of the documentation. We will be able to audit the performance, accessibility, SEO, etc of the doc site.
 - Adding other GitHub Action to check broken links, spelling mistakes, check code style, etc.
 - Finalizing the project deliverables and refactoring the code if any, based on the feedback.
 - Making the project report and requesting mentors to review the project report.

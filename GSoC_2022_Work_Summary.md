@@ -19,8 +19,6 @@ I have divided the Development Phase into two phases i.e. `Phase 1` and `Phase 2
 
 #### Phase 1
 
-Subtask
-
 > **Week 1 - Week 6 (June 13 - July 25, 2022)**
 
 ---
@@ -43,9 +41,11 @@ Subtask
 
     > PR related to adding `CONTRIBUTING.md` file is [https://github.com/keptn-sandbox/new-keptn-docs-engine/pull/4](https://github.com/keptn-sandbox/new-keptn-docs-engine/pull/4).
 
+Issue link: [https://github.com/keptn-sandbox/new-keptn-docs-engine/issues/2](https://github.com/keptn-sandbox/new-keptn-docs-engine/issues/2)
+
 ---
 
-- [x] Adding UI and UX changes and moving the content to the new documentation engine
+- [x] Adding UI and UX changes, moving the content and search functionality to the new documentation engine.
 
   - [x] Implementing UI and UX changes in the documentation engine like creating components, templates, standalone pages, etc.
 
@@ -63,28 +63,99 @@ Subtask
 
   - [x] Adding documentation search functionality.
 
-  > As of now I have added local search support using a [@easyops-cn/docusaurus-search-local](https://github.com/easyops-cn/docusaurus-search-local) local search plugin but in the future, we can update this to [Algolia DocSearch](https://docsearch.algolia.com/).
+    > As of now I have added local search support using a [docusaurus-lunr-search](https://github.com/praveenn77/docusaurus-lunr-search) local search plugin but in the future, we can update this to [Algolia DocSearch](https://docsearch.algolia.com/).
+
+    > Adding Algolia DocSearch support to the documentation engine is not part of this proposal but it is a suggestion to add it in the future.
+
+    > PR related to adding documentation search functionality can be found here [https://github.com/keptn-sandbox/new-keptn-docs-engine/pull/11](https://github.com/keptn-sandbox/new-keptn-docs-engine/pull/11).
+
+Issue link: [https://github.com/keptn-sandbox/new-keptn-docs-engine/issues/5](https://github.com/keptn-sandbox/new-keptn-docs-engine/issues/5)
 
 ---
 
 - [x] Adding Versioning of docs support feature.
 
-  > PR related to adding versioning support can be found here [https://github.com/keptn-sandbox/new-keptn-docs-engine/pull/10](https://github.com/keptn-sandbox/new-keptn-docs-engine/pull/10).
+In current docs, we don't have versioning of docs support feature. As of now, we were versioning the docs manually. To solve this problem we have added versioning of the docs support feature using Docusaurus. We can use the versioning CLI to create a new documentation version based on the latest content in the `docs` directory. That specific set of documentation will then be preserved and accessible even as the documentation in the `docs` directory continues to evolve.
+
+> PR related to adding versioning support can be found here [https://github.com/keptn-sandbox/new-keptn-docs-engine/pull/10](https://github.com/keptn-sandbox/new-keptn-docs-engine/pull/10).
 
 ---
 
 - [ ] Adding Multiple repository docs support feature.
 
----
+Some reasons why we want Multiple repository docs support feature:
 
-- [ ] Implementing all SEO approaches listed in [https://docusaurus.io/docs/seo](https://docusaurus.io/docs/seo) like adding metadata in site configuration, adding metadata for all single pages, adding metadata in the front matter of all markdown files, etc.
+- Keptn CLI docs are generated using the `keptn generate docs` command. As of now, we run it in GitHub action [here](https://github.com/keptn/keptn.github.io/blob/9c649b434c9081028e0cc3535c9fa3a4217941fb/.github/workflows/auto-update.yml#L72) to populate our docs repo with CLI docs.
+- If we look at the architecture doc [here](https://keptn.sh/docs/concepts/architecture/), the Keptn control plan consists of multiple services which have their READMEs in the main Keptn repository ([example](https://github.com/keptn/keptn/tree/master/jmeter-service)). Just look for any directory with `service` in [https://github.com/keptn/keptn](https://github.com/keptn/keptn), we can see individual READMEs for all such services. It's a good idea to move these READMEs to the docs site because the people who develop and maintain these services are responsible for updating the READMEs. Having them in a single place just makes it easier to update the READMEs and read them later as well.
+- We also have services that extend the control plane which sits in a separate repository. Check [dynatrace-service](https://github.com/keptn-contrib/dynatrace-service) for example. As of now, if we add a new service that extends the control plane, we also have to add some documentation around it manually in the main docs repository.
+- We have a miscellaneous repository like [Keptn spec](https://github.com/keptn/spec), documentation around what different values mean in the Keptn helm chart which we can't put in the main docs repository because they serve a different purpose.
 
-- [ ] Adding internationalization ([i18n](https://en.wikipedia.org/wiki/Internationalization_and_localization)) support. A possible translation strategy is to version control the translation files with Git (or any other VCS).
+  - [x] Adding Docusaurus Multi-instance support.
 
-  > Discussion on this is done [here](https://keptn.slack.com/archives/C017T4KUAG3/p1657235519862879) and we have put this on lower priority.
+    > PR related to adding Docusaurus Multi-instance support can be found here [https://github.com/keptn-sandbox/new-keptn-docs-engine/pull/12](https://github.com/keptn-sandbox/new-keptn-docs-engine/pull/12).
+
+  - [ ] Adding GitHub Action that can pull the docs from multiple repositories.
+
+  > We want a GitHub Action which can pull the docs from [https://github.com/keptn/keptn.github.io](https://github.com/keptn/keptn.github.io) to [https://github.com/keptn-sandbox/new-keptn-docs-engine](https://github.com/keptn-sandbox/new-keptn-docs-engine) repository and organize the docs accordingly.
+
+**NOTE:** Multiple repository docs support feature is not yet implemented completely and it is still in progress. As of now `Docs Multi-instance` support is added which is a`@docusaurus/plugin-content-docs` plugin. Adding GitHub Action which can pull the docs from multiple repositories is not yet implemented.
 
 ---
 
 #### Phase 2
 
 > **Week 7 - Week 12 (July 26 - September 5, 2022)**
+
+---
+
+- [x] Integrating [Lighthouse](https://developers.google.com/web/tools/lighthouse) CI.
+
+Every webpage that is crawled by a search engine is evaluated with a score from 5 categories: Performance, Accessibility, Best Practices, SEO, and PWA. This is given a score between 0 – 100. The better your lighthouse score will affect how high up your webpage will appear on a search engine.
+
+With a high score, your site meets the best practices and SEO standards outlined by Google in terms of performance and accessibility. Lighthouse is an important tool because it can identify common problems that affect the quality of your websites and propose solutions for them.
+
+Lighthouse CI is a suite of tools that make continuously running, saving, retrieving, and asserting against [Lighthouse](https://github.com/GoogleChrome/lighthouse) results as easily as possible. So we have integrated Lighthouse CI GitHub Action into the new documentation engine.
+
+> PR related to adding Lighthouse CI can be found here [https://github.com/keptn-sandbox/new-keptn-docs-engine/pull/17](https://github.com/keptn-sandbox/new-keptn-docs-engine/pull/17).
+
+Issue link: [https://github.com/keptn-sandbox/new-keptn-docs-engine/issues/16](https://github.com/keptn-sandbox/new-keptn-docs-engine/issues/16)
+
+---
+
+- [x] Adding [Vale](https://github.com/errata-ai/vale) linter for doc quality checks.
+
+To solve problems related to the styling of documentation, linting, doc quality checks, etc we wanted some tool to achieve these things.
+
+We research and found [proselint](https://github.com/amperser/proselint) and [Vale](https://github.com/errata-ai) which can full fill our needs. After going through both we feel Vale has a lot of features as compared to `proselint` and is widely used in many popular open source organizations.
+
+So, we integrated [vale-action](https://github.com/errata-ai/vale-action) in the new documentation engine.
+
+> PR related to adding Vale linter can be found here [https://github.com/keptn-sandbox/new-keptn-docs-engine/issues/19](https://github.com/keptn-sandbox/new-keptn-docs-engine/issues/19)
+
+Issue link: [https://github.com/keptn-sandbox/new-keptn-docs-engine/issues/19](https://github.com/keptn-sandbox/new-keptn-docs-engine/issues/19)
+
+---
+
+- [ ] Adding [Prettier](https://prettier.io/) GitHub Action support to format markdown docs.
+
+---
+
+- [ ] Adding other GitHub Action to check broken links, spelling mistakes, check code style, etc.
+
+---
+
+- [ ] Finalizing the project deliverables and refactoring the code if any, based on the feedback.
+- [ ] Making the project report and requesting mentors to review the project report.
+- [ ] Finalizing and submitting the project report and other related documents.
+
+---
+
+#### Miscleaneous Phase
+
+- Adding internationalization ([i18n](https://en.wikipedia.org/wiki/Internationalization_and_localization)) support. A possible translation strategy is to version control the translation files with Git (or any other VCS).
+
+  > Discussion on this is done [here](https://keptn.slack.com/archives/C017T4KUAG3/p1657235519862879) and we have put this on lower priority.
+
+- Implementing all SEO approaches listed in [https://docusaurus.io/docs/seo](https://docusaurus.io/docs/seo) like adding metadata in site configuration, adding metadata for all single pages, adding metadata in the front matter of all markdown files, etc.
+
+  > This will take some time to implement as we will be adding metadata in the front matter of all files and will be implementing slowly as we still moving the content to the new documentation engine.
