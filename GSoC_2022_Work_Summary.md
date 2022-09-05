@@ -83,7 +83,7 @@ In current docs, we don't have versioning of docs support feature. As of now, we
 
 - [ ] Adding Multiple repository docs support feature.
 
-Some reasons why we want Multiple repository docs support feature:
+Some reasons why we want the Multiple repository docs support feature:
 
 - Keptn CLI docs are generated using the `keptn generate docs` command. As of now, we run it in GitHub action [here](https://github.com/keptn/keptn.github.io/blob/9c649b434c9081028e0cc3535c9fa3a4217941fb/.github/workflows/auto-update.yml#L72) to populate our docs repo with CLI docs.
 - If we look at the architecture doc [here](https://keptn.sh/docs/concepts/architecture/), the Keptn control plan consists of multiple services which have their READMEs in the main Keptn repository ([example](https://github.com/keptn/keptn/tree/master/jmeter-service)). Just look for any directory with `service` in [https://github.com/keptn/keptn](https://github.com/keptn/keptn), we can see individual READMEs for all such services. It's a good idea to move these READMEs to the docs site because the people who develop and maintain these services are responsible for updating the READMEs. Having them in a single place just makes it easier to update the READMEs and read them later as well.
@@ -130,17 +130,40 @@ We research and found [proselint](https://github.com/amperser/proselint) and [Va
 
 So, we integrated [vale-action](https://github.com/errata-ai/vale-action) in the new documentation engine.
 
+Also, for the time being, I have adopted the [Google Style Guide](https://google.github.io/styleguide/) because my main motivation is to integrate the Vale GitHub Action into the docs engine. Yeah, I think we can have a separate discussion about which style guide to follow or we can have our custom style guide as well.
+
+One of the limitations of Vale is that we have to update things in `vocab.txt` which is required for false positives. Some keywords, and names (e.g. `Keptn`, `KEP` etc) are considered as `vale.Spelling` errors, so we have to add them inside `vocab.txt` file. We can list all unique words which are considered errors in `vocab.txt` using the below command.
+
+```shell
+yarn run lint:docs | grep -o "'[a-z A-Z]*'" | grep -o "[a-z A-Z]*" | sort | uniq > .github/styles/vocab.txt
+```
+
+Now we have to manually validate all words listed in `vocab.txt`, discard which are invalid and correct them in the file where they were located.
+
+Now we have to manually validate all words listed in `vocab.txt`, discard which are invalid and correct them in the file where they were located.
+
 > PR related to adding Vale linter can be found here [https://github.com/keptn-sandbox/new-keptn-docs-engine/issues/19](https://github.com/keptn-sandbox/new-keptn-docs-engine/issues/19)
 
 Issue link: [https://github.com/keptn-sandbox/new-keptn-docs-engine/issues/19](https://github.com/keptn-sandbox/new-keptn-docs-engine/issues/19)
 
 ---
 
-- [ ] Adding [Prettier](https://prettier.io/) GitHub Action support to format markdown docs.
+- [x] Adding [Prettier](https://prettier.io/) GitHub Action support to format docs.
+
+[Prettier](https://prettier.io/) is a very popular code formatter that uses very opinionated but sensible styles to format your code and prevent ongoing debates about code styles. So we wanted a GitHub action to automatically format your code using Prettier.
+
+To set up the GitHub action, all we need to do is install our dependencies (e.g. `yarn install`), run our format script (e.g. `yarn format`), and then commit any changes if necessary.
+
+By utilizing Prettier with GitHub Actions, we can ensure that our code is formatted consistently and without any issues.
+It also helps to reduce manual work when formatting code.
+
+> PR related to adding Prettier GitHub Action can be found here [https://github.com/keptn-sandbox/new-keptn-docs-engine/pull/25](https://github.com/keptn-sandbox/new-keptn-docs-engine/pull/25)
+
+Issue link: [https://github.com/keptn-sandbox/new-keptn-docs-engine/issues/23](https://github.com/keptn-sandbox/new-keptn-docs-engine/issues/23)
 
 ---
 
-- [ ] Adding other GitHub Action to check broken links, spelling mistakes, check code style, etc.
+- [ ] Adding GitHub Action to check broken links, spelling mistakes, check code style, etc.
 
 ---
 
