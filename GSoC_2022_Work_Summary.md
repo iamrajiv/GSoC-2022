@@ -81,7 +81,7 @@ In current docs, we don't have versioning of docs support feature. As of now, we
 
 ---
 
-- [ ] Adding Multiple repository docs support feature.
+- [x] Adding Multiple repository docs support feature.
 
 Some reasons why we want the Multiple repository docs support feature:
 
@@ -93,12 +93,6 @@ Some reasons why we want the Multiple repository docs support feature:
   - [x] Adding Docusaurus Multi-instance support.
 
     > PR related to adding Docusaurus Multi-instance support can be found here [https://github.com/keptn-sandbox/new-keptn-docs-engine/pull/12](https://github.com/keptn-sandbox/new-keptn-docs-engine/pull/12).
-
-  - [ ] Adding GitHub Action that can pull the docs from multiple repositories.
-
-  > We want a GitHub Action which can pull the docs from [https://github.com/keptn/keptn.github.io](https://github.com/keptn/keptn.github.io) to [https://github.com/keptn-sandbox/new-keptn-docs-engine](https://github.com/keptn-sandbox/new-keptn-docs-engine) repository and organize the docs accordingly.
-
-**NOTE:** Multiple repository docs support feature is not yet implemented completely and it is still in progress. As of now `Docs Multi-instance` support is added which is a`@docusaurus/plugin-content-docs` plugin. Adding GitHub Action which can pull the docs from multiple repositories is not yet implemented.
 
 ---
 
@@ -163,7 +157,13 @@ Issue link: [https://github.com/keptn-sandbox/new-keptn-docs-engine/issues/23](h
 
 ---
 
-- [ ] Adding GitHub Action to check broken links, spelling mistakes, check code style, etc.
+- [x] Adding GitHub Action to check broken links in docs.
+
+It is a GitHub Action that can be run on the docs to check for broken links and xrefs. The GitHub Action is able to create an issue on the repository with the broken links report, add labels to the issue and assign it to the relevant maintainers.
+
+> PR related to adding GitHub Action to check broken links in docs can be found here [https://github.com/keptn-sandbox/new-keptn-docs-engine/pull/28](https://github.com/keptn-sandbox/new-keptn-docs-engine/pull/28)
+
+Issue link: [https://github.com/keptn-sandbox/new-keptn-docs-engine/issues/27](https://github.com/keptn-sandbox/new-keptn-docs-engine/issues/27)
 
 ---
 
@@ -174,6 +174,12 @@ Issue link: [https://github.com/keptn-sandbox/new-keptn-docs-engine/issues/23](h
 ---
 
 #### Miscleaneous Phase
+
+- Adding GitHub Action that can pull the docs from multiple repositories.
+
+> We want a GitHub Action which can pull the docs from [https://github.com/keptn/keptn.github.io](https://github.com/keptn/keptn.github.io) to [https://github.com/keptn-sandbox/new-keptn-docs-engine](https://github.com/keptn-sandbox/new-keptn-docs-engine) repository and organize the docs accordingly.
+
+**NOTE:** Multiple repository docs support feature is not yet implemented completely and it is still in progress. As of now `Docs Multi-instance` support is added which is a`@docusaurus/plugin-content-docs` plugin. Adding GitHub Action which can pull the docs from multiple repositories is not yet implemented.
 
 - Adding internationalization ([i18n](https://en.wikipedia.org/wiki/Internationalization_and_localization)) support. A possible translation strategy is to version control the translation files with Git (or any other VCS).
 

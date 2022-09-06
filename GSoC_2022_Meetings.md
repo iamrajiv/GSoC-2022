@@ -11,6 +11,34 @@ Meetings
 </h3>
 </div>
 
+## 6th September 2022
+
+- Attendees
+  - Meg McRoberts
+  - Rajiv Ranjan Singh
+  - Suraj Banakar
+- Discussion on the final presentation of the new documentation site engine.
+- Discussion on what more content to put on the new documentation site.
+- Discussion on final work submission for GSoC 2022 like what links and work product we are going to submit.
+- Rajiv
+  - What’s remaining
+    - Feature to pull in docs from other repositories
+    - Broken link check
+  - What do we want to show in the final presentation?
+    - Meg: Remove Roadmap
+    - Meg can help with moving the docs
+    - Explore Keptn?
+    - Meg can help with nice things to show around the search and other features to wow the community
+- Meg
+  - Features that we have already implemented
+    - Search
+    - Lint check for style
+  - Needs to be done
+    - CSS/Styles
+    - Migrate existing docs
+    - i18n and i10n
+    - Importing docs from other repositories
+
 ## 29th August 2022
 
 - Attendees
@@ -61,7 +89,7 @@ Meetings
   - Do we have a linter for unclosed italic tags, checking broken xrefs?
     - We need another issue for this
 - Suraj
-  - What is expected of the end result?
+  - What is the expected end result?
 
 1. Docs Engine
    1. Users:
