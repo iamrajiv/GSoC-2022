@@ -132,13 +132,13 @@ Meetings
   - Rajiv Ranjan Singh
   - Suraj Banakar
 - Suraj
-  - Demo in GSoC Community meeting
+  - Demo in GSoC Community Meeting
     - Rajiv is going to prepare a presentation
     - If all the PRs don’t get merged, we demo Rajiv’s branch. That being said let’s try to get all of his PRs merged
   - Rajiv needs review on [https://github.com/keptn-sandbox/new-keptn-docs-engine/pull/9/files](https://github.com/keptn-sandbox/new-keptn-docs-engine/pull/9/files)
   - There’s one more PR around versioning which Rajiv is going to create
   - Rajiv will reach out to the team for input on multi-repo support
-  - Rajiv is going to work on the presentation for the GSoC Community meeting
+  - Rajiv is going to work on the presentation for the GSoC Community Meeting
 
 ## 1st July 2022
 
@@ -219,3 +219,7 @@ Meetings
   - Create the structure of new documentation (@Meg)
     - [Restructure documentation](https://docs.google.com/document/d/12xVgFSV5Q7keDXOqVFE8pqY0Qkhq--nKsP-7NkVuyjA/edit#heading=h.vm22oe3mkivh)
     - Developer docs + User docs
+
+<div align="right">
+<img src="assets/gsoc-2022-3.svg" height="auto" width="100" />
+</div>

@@ -77,7 +77,7 @@ I have decent experience in competitive programming and hence have a good unders
 
 This is the project proposal for the **New Documentation Site Engine** for Keptn on which I want to work as a part of Google Summer of Code 2022. I have proposed my timeline to complete this work in a span of **12 weeks**.
 
-Keptn is an event-driven orchestration engine for cloud-native apps. Started in 2018, it uses a declarative approach to automate delivery and operations so they can be scaled up to a large number of services. Keptn evaluates _Service Level Indicators (SLOs)_ and provides a dashboard, alerts, and auto-remediation for them. It also provides [integrations](https://keptn.sh/docs/integrations/) with the Cloud Native ecosystem including _Prometheus_, _ArgoCD_, _CloudEvents_, _Backstage_, and many other cloud-native projects.
+Keptn is an event-driven orchestration engine for cloud-native apps. Started in 2018, it uses a declarative approach to automate delivery and operations so they can be scaled up to a large number of services. Keptn evaluates _Service Level Indicators (SLOs)_ and provides a dashboard, alerts, and auto-remediation for them. It also provides integrations with the Cloud Native ecosystem including _Prometheus_, _ArgoCD_, _CloudEvents_, _Backstage_, and many other cloud-native projects.
 
 ## Problem Statement
 
@@ -93,7 +93,7 @@ Currently, the Keptn documentation site is based on a [Hugo](https://gohugo.io/)
 
 Some issues with the current documentation site of Keptn:
 
-- No documents aggregation from multiple repositories. It prevents the community from using the [Documentation as Code](https://www.writethedocs.org/guide/docs-as-code/) approach when documentation is stored and modified along with production code in its repositories.
+- No document aggregation from multiple repositories. It prevents the community from using the [Documentation as Code](https://www.writethedocs.org/guide/docs-as-code/) approach when documentation is stored and modified along with production code in its repositories.
 - No support for versioning, so we do a lot of copy-paste to preserve old versions of the documentation. This also causes issues with external references from other docs that link into the documentation.
 - Does not support shared text between different docs.
 
@@ -110,7 +110,7 @@ The user docs site is designed to assist end-users in using a product or service
 - Move documentation sources to code repositories so that we could enable documentation as code and make documentation patches a part of the contribution process.
 - Automation that builds the site from multiple repositories. It includes scripting, GitHub Actions, and automated configuration management.
 - GitHub workflows for continuous deployment of the website to GitHub Pages, Netlify, Vercel, etc.
-- Implement previews for the website and support for staging changes (e.g. pre-release documentation). Developer and Contributor documentation for the new engine, in collaboration with the documentation contributors.
+- Implement previews for the website and support for staging changes (e.g. pre-release documentation).
 
 and many more.
 
@@ -206,9 +206,9 @@ In [keptn-docusaurus-poc](https://keptn-docusaurus-poc.vercel.app/) I have creat
 ### Community Bonding (May 20 - June 12, 2022)
 
 - Finalizing the documentation site engine i.e. which engine or tool we will use to create the documentation site.
-- Scheduling meetings dates.
+- Scheduling meeting dates.
 - Finalizing the list of features needed in the documentation engine. Also, discussing UI and UX design for the documentation engine.
-- Trying and checking other approaches to implement Multiple repository docs support and select which is appropriate As of now, we are able to implement the zero-md approach.
+- Trying and checking other approaches to implement Multiple repository docs support and selecting which is appropriate As of now, we are able to implement the zero-md approach.
 
 ### Development Phase
 
@@ -222,21 +222,20 @@ I have divided the Development Phase into two phases i.e. `Phase 1` and `Phase 2
 
 > **Week 1 - Week 6 (June 13 - July 25, 2022)**
 
-- [x] [Initialization and deployment of the documentation engine based on Docusaurus from scratch](https://github.com/keptn-sandbox/new-keptn-docs-engine/issues/2)
-- [x] [Adding UI and UX changes and moving the content to the new documentation engine](https://github.com/keptn-sandbox/new-keptn-docs-engine/issues/5)
-- [x] [Adding Versioning of docs support feature](https://github.com/keptn-sandbox/new-keptn-docs-engine/pull/10)
-- [ ] Adding Multiple repository docs support feature
-- [ ] Implementing all SEO approaches listed in [https://docusaurus.io/docs/seo](https://docusaurus.io/docs/seo) like adding metadata in site configuration, adding metadata for all single pages, adding metadata in the front matter of all markdown files, etc.
-- [ ] Adding internationalization ([i18n](https://en.wikipedia.org/wiki/Internationalization_and_localization)) support. A possible translation strategy is to version control the translation files with Git (or any other VCS).
+- Initialization and deployment of the documentation engine based on Docusaurus from scratch.
+- Adding UI and UX changes, moving the content and search functionality to the new documentation site engine.
+- Adding documentation search functionality.
+- Adding Versioning of docs support feature.
+- Adding Multiple repository docs support feature.
 
 #### Phase 2
 
 > **Week 7 - Week 12 (July 26 - September 5, 2022)**
 
-- Adding [Vale](https://github.com/errata-ai/vale) linter or equivalent linter for doc quality checks.
-- Adding [Prettier](https://prettier.io/) GitHub Action support to format markdown docs.
-- Integrating [Lighthouse](https://developers.google.com/web/tools/lighthouse) CI in the docs engine to check the quality of the documentation. We will be able to audit the performance, accessibility, SEO, etc of the doc site.
-- Adding other GitHub Action to check broken links, spelling mistakes, check code style, etc.
+- Integrating [Lighthouse](https://developers.google.com/web/tools/lighthouse) CI.
+- Adding [Vale](https://github.com/errata-ai/vale) linter for doc quality checks.
+- Adding [Prettier](https://prettier.io/) GitHub Action support to format docs.
+- Adding GitHub Action to check broken links in docs.
 - Finalizing the project deliverables and refactoring the code if any, based on the feedback.
 - Making the project report and requesting mentors to review the project report.
 - Finalizing and submitting the project report and other related documents.
@@ -298,14 +297,6 @@ I will also responsibly keep my mentor updated in case of any emergency that occ
 Post the GSoC period I would love to continue contributing by adding more features to not only the Keptn documentation engine but also to other parts of Keptn projects. Once the project is completed, I will try to provide patches and bug fixes for it since I want to contribute to the project in some or another way. If there are things left unimplemented, I will try to complete them post-GSoC. Apart from that, I will always be a part of the Keptn community and will be following as well as contributing to its development.
 
 Regardless of GSoC, I would love to engage in discussions with the Keptn community to get exposure to new technologies and ideas. I would love to be of any help even after the GSoC period.
-
-## References
-
-- [https://github.com/iamrajiv/GSoC-2022](https://github.com/iamrajiv/GSoC-2022)
-- [https://github.com/iamrajiv/keptn-docusaurus-poc](https://github.com/iamrajiv/keptn-docusaurus-poc)
-- [https://github.com/keptn](https://github.com/keptn)
-- [https://keptn-docusaurus-poc.vercel.app/](https://keptn-docusaurus-poc.vercel.app/)
-- [https://keptn.sh/](https://keptn.sh/)
 
 <div align="right">
 <img src="assets/gsoc-2022-3.svg" height="auto" width="100" />
