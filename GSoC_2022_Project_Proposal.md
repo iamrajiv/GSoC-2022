@@ -18,7 +18,7 @@ Project Proposal
 - [Introduction](#introduction)
 - [Problem Statement](#problem-statement)
 - [Current Status of the Project](#current-status-of-the-project)
-- [Project scope & deliverables](#project-scope--deliverables)
+- [Project scope & deliverables](#project-scope-&-deliverables)
   - [Expected Deliverables](#expected-deliverables)
   - [Future work based on Project](#future-work-based-on-project)
 - [Brief description of my Solution & Implementation](#brief-description-of-my-solution--implementation)
@@ -35,7 +35,6 @@ Project Proposal
 - [Why am I the best person to execute this proposal?](#why-am-i-the-best-person-to-execute-this-proposal)
 - [Communication](#communication)
 - [Post GSoC](#post-gsoc)
-- [References](#references)
 
 ## About me
 

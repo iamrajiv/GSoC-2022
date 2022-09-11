@@ -11,6 +11,21 @@ Project Report
 </h3>
 </div>
 
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Problem Statement](#problem-statement)
+- [Work Summary](#work-summary)
+  - [Phase 1](#phase-1)
+  - [Phase 2](#phase-2)
+  - [Miscellaneous Phase](#miscellaneous-phase)
+- [Future Work to be done](#future-work-to-be-done)
+- [Meetings Details](#meetings-details)
+- [Challenges Faced](#challenges-faced)
+- [Learnings](#learnings)
+- [Acknowledgments](#acknowledgments)
+- [References](#references)
+
 ## Introduction
 
 This is the project report for the **New Documentation Site Engine** for Keptn on which I had worked as a part of Google Summer of Code 2022 mentee. I have proposed my timeline to complete this work in a span of **12 weeks**.
@@ -191,9 +206,9 @@ Issue link: [https://github.com/keptn-sandbox/new-keptn-docs-engine/issues/27](h
 
 ---
 
-- [ ] Finalizing the project deliverables and refactoring the code if any, based on the feedback.
-- [ ] Making the project report and requesting mentors to review the project report.
-- [ ] Finalizing and submitting the project report and other related documents.
+- [x] Finalizing the project deliverables and refactoring the code if any, based on the feedback.
+- [x] Making the project report and requesting mentors to review the project report.
+- [x] Finalizing and submitting the project report and other related documents.
 
 ---
 

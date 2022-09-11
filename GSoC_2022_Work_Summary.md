@@ -11,6 +11,12 @@ Work Summary
 </h3>
 </div>
 
+## Table of Contents
+
+- [Phase 1](#phase-1)
+- [Phase 2](#phase-2)
+- [Miscellaneous Phase](#miscellaneous-phase)
+
 I have divided the Development Phase into two phases i.e. `Phase 1` and `Phase 2`.
 
 > `Phase 1` will deal mostly with implementing core features and functionality needed in the documentation engine.
@@ -175,9 +181,9 @@ Issue link: [https://github.com/keptn-sandbox/new-keptn-docs-engine/issues/27](h
 
 ---
 
-- [ ] Finalizing the project deliverables and refactoring the code if any, based on the feedback.
-- [ ] Making the project report and requesting mentors to review the project report.
-- [ ] Finalizing and submitting the project report and other related documents.
+- [x] Finalizing the project deliverables and refactoring the code if any, based on the feedback.
+- [x] Making the project report and requesting mentors to review the project report.
+- [x] Finalizing and submitting the project report and other related documents.
 
 ---
 

@@ -11,6 +11,18 @@ Meetings
 </h3>
 </div>
 
+## Table of Contents
+
+- [6th September 2022](#6th-september-2022)
+- [29th August 2022](#29th-august-2022)
+- [18th August 2022](#18th-august-2022)
+- [8th August 2022](#8th-august-2022)
+- [15th July 2022](#15th-july-2022)
+- [1st July 2022](#1st-july-2022)
+- [17th June 2022](#17th-june-2022)
+- [3rd June 2022](#3rd-june-2022)
+- [26th May 2022 (Kickoff meeting)](#26th-may-2022-kickoff-meeting)
+
 ## 6th September 2022
 
 - Attendees
