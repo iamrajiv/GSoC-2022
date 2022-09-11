@@ -14,6 +14,8 @@ Project Report
 ## Table of Contents
 
 - [Introduction](#introduction)
+- [Project team](#project-team)
+- [Contacts](#contacts)
 - [Problem Statement](#problem-statement)
 - [Work Summary](#work-summary)
   - [Phase 1](#phase-1)
@@ -28,9 +30,20 @@ Project Report
 
 ## Introduction
 
-This is the project report for the **New Documentation Site Engine** for Keptn on which I had worked as a part of Google Summer of Code 2022 mentee. I have proposed my timeline to complete this work in a span of **12 weeks**.
+This project is about a New Documentation Site Engine for Keptn which can handle a large number of documentation projects of Keptn. Currently, the Keptn documentation site is based on a [Hugo](https://gohugo.io/) theme called [hugo-serif-theme](https://github.com/zerostaticthemes/hugo-serif-theme). For tutorials, [Codelabs](https://github.com/googlecodelabs/tools) is also used. While extremely handy for smaller projects and initial versions of Keptn, this toolchain has serious deficiencies for larger-scale projects like Keptn.
+
+The new Documentation Site engine will be based on Docusaurus. Docusaurus is an optimized site generator in React. Docusaurus helps you to move fast and write content. Build documentation websites, blogs, marketing pages, and more. The main focus of Keptn New Documentation Site Engine will be managing large-scale documentation and complex documentation projects. So two major things which are needed in the documentation engine are the ability to build the documentation from the source located in multiple repositories and support for document versioning.
 
 Keptn is an event-driven orchestration engine for cloud-native apps. Started in 2018, it uses a declarative approach to automate delivery and operations so they can be scaled up to a large number of services. Keptn evaluates _Service Level Indicators (SLOs)_ and provides a dashboard, alerts, and auto-remediation for them. It also provides integrations with the Cloud Native ecosystem including _Prometheus_, _ArgoCD_, _CloudEvents_, _Backstage_, and many other cloud-native projects.
+
+## Project team
+
+- Contributor: [Rajiv Ranjan Singh](https://github.com/iamrajiv)
+- Mentors: [Indermohan Singh](https://github.com/imsingh), [Meg McRoberts](https://github.com/StackScribe), [Suraj Banakar](https://github.com/vadasambar)
+
+## Contacts
+
+All documentation-related discussions are done in the [#keptn-docs](https://keptn.slack.com/archives/C017T4KUAG3) channel on the Keptn Slack workspace.
 
 ## Problem Statement
 
