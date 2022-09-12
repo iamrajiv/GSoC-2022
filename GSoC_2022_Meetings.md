@@ -13,6 +13,7 @@ Meetings
 
 ## Table of Contents
 
+- [12th September 2022](#12th-september-2022)
 - [6th September 2022](#6th-september-2022)
 - [29th August 2022](#29th-august-2022)
 - [18th August 2022](#18th-august-2022)
@@ -22,6 +23,29 @@ Meetings
 - [17th June 2022](#17th-june-2022)
 - [3rd June 2022](#3rd-june-2022)
 - [26th May 2022 (Kickoff meeting)](#26th-may-2022-kickoff-meeting)
+
+## 12th September 2022
+
+- Attendees
+  - Meg McRoberts
+  - Rajiv Ranjan Singh
+  - Suraj Banakar
+- Suraj
+  - Do you need any help anywhere?
+  - TODO:
+    - Take a look at the final report
+    - Review prettier PR: [https://github.com/keptn/community/pull/167](https://github.com/keptn/community/pull/167)
+    - Take a look at [https://github.com/keptn-sandbox/new-keptn-docs-engine/pull/28](https://github.com/keptn-sandbox/new-keptn-docs-engine/pull/28)
+- Meg
+  - TODO:
+    - Take a look at the final report
+    - Suggest any new checks (read: review) [https://github.com/keptn/community/pull/167](https://github.com/keptn/community/pull/167)
+- Rajiv
+  - Need Suraj to take a look at the TODOs
+  - TODO:
+    - [https://github.com/keptn-sandbox/new-keptn-docs-engine/pull/28#discussion_r968019686](https://github.com/keptn-sandbox/new-keptn-docs-engine/pull/28#discussion_r968019686)
+    - Communicate with mentors for review once done with the final draft of the presentation
+    - [https://keptn.slack.com/archives/C017T4KUAG3/p1659322635479589](https://keptn.slack.com/archives/C017T4KUAG3/p1659322635479589)
 
 ## 6th September 2022
 
@@ -166,7 +190,7 @@ Meetings
 - Indermohan
   - Add Indermohan and Suraj for PRs with technical things
   - Add Meg as a reviewer for PRs around structuring, writing, or anything where you need input on how content should be written or structured
-- Todo
+- TODO:
   - Indermohan: Create GitHub issues around the problems we see in the migrated content
   - Mentors: Ask Oleg/Community if we want to enable i18n support now or later
   - Indermohan: Create a GitHub issue to research around front matter linting

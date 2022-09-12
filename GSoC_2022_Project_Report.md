@@ -142,9 +142,55 @@ Some reasons why we want the Multiple repository docs support feature:
 
     > PR related to adding Docusaurus Multi-instance support can be found here [https://github.com/keptn-sandbox/new-keptn-docs-engine/pull/12](https://github.com/keptn-sandbox/new-keptn-docs-engine/pull/12).
 
-  - [ ] Adding GitHub Action that can pull the docs from multiple repositories.
+But Docusaurus Multi-instance support does not work as expected. The problem with multiple repository docs support was at starting I thought we only need `Docusaurus Multi-instance support` which is the same as hosting multiple docs in a single docusaurus project but after that, I got to know that in addition to `Docusaurus Multi-instance support` we need to pull docs from other repositories and organize it in new documentation site engine. But again I was not sure where to pull docs from whether I have to pull from [https://github.com/keptn/keptn.github.io](https://github.com/keptn/keptn.github.io) repository or multiple repositories and combine and organize all docs to new documentation site engine. I discussed this with my mentors and I got clarity on this. We got to know a lot of ways we can implement this feature.
 
-> We want a GitHub Action which can pull the docs from [https://github.com/keptn/keptn.github.io](https://github.com/keptn/keptn.github.io) to [https://github.com/keptn-sandbox/new-keptn-docs-engine](https://github.com/keptn-sandbox/new-keptn-docs-engine) repository and organize the docs accordingly. Also, we are not sure this is the right approach to solve this problem. But it's one of the approaches we have thought of.
+Some ways we can implement this feature:
+
+- Writing a GitHub Action which can pull the docs from [https://github.com/keptn/keptn.github.io](https://github.com/keptn/keptn.github.io) to [https://github.com/keptn-sandbox/new-keptn-docs-engine](https://github.com/keptn-sandbox/new-keptn-docs-engine) repository and organize the docs accordingly.
+
+I thought of using Dependabot to regularly check new docs in the `keptn/keptn.github.io` repository and pull it to the `keptn-sandbox/new-keptn-docs-engine` repository. Also, I tried writing a simple GitHub Action script that pulls docs but it is not robust enough to pull docs from multiple repositories and organize them in the new documentation site engine.
+
+```shell
+shell
+run: |
+    git clone https://.:${{ secrets.GITHUB_TOKEN }}@github.com/project target
+    rm everything but the .git directory
+    copy source\files target
+    cd target
+    git add .
+    git diff-index --quiet HEAD || git commit -m "Automatic publish from github.com/project"
+    git push target master
+```
+
+So, I tried the different approaches around GitHub Action but I was not able to make robust GitHub Action that can pull docs from multiple repositories and organize them in the new documentation site engine. I created a discussion around it [here](https://keptn.slack.com/archives/C017T4KUAG3/p1659322635479589) but did not get much feedback from the community.
+
+- Writing a GitHub Action with Keptn CLI and running it for multiple folders to populate the docs in the new documentation site engine. Something like this [https://github.com/keptn/keptn.github.io/blob/master/.github/workflows/auto-update.yml](https://github.com/keptn/keptn.github.io/blob/master/.github/workflows/auto-update.yml).
+
+For the current documentation site engine, we generate docs using the Keptn CLI. So, I tried writing GitHub Action same as [this](https://github.com/keptn/keptn.github.io/blob/master/.github/workflows/auto-update.yml) but in addition to this, I would be running the `keptn generate docs` command for multiple folders. But this does not work as expected. The problem is the front matter template in [https://github.com/keptn/keptn/blob/master/cli/cmd/generate_docs.go](https://github.com/keptn/keptn/blob/master/cli/cmd/generate_docs.go) is coded according to the Hugo theme but we wanted frontmatter to be according to Docusaurus format.
+
+Something like this:
+
+```go
+const gendocFrontmatterTemplate = `---
+sidebar_position: %d
+title: "%s"
+description: "%s
+keywords: "%s"
+slug: "%s"
+tags: "%s"
+---
+`
+```
+
+We wanted frontmatter like this because it enhances the SEO of docs. But to do this we had to update the go code in [https://github.com/keptn/keptn/blob/master/cli/cmd/generate_docs.go](https://github.com/keptn/keptn/blob/master/cli/cmd/generate_docs.go) file but that will break the current documentation generation process so had to drop this approach.
+
+- Using [docusaurus-plugin-remote-content](https://github.com/rdilweb/docusaurus-plugin-remote-content)
+
+Its Docusaurus plugin downloads content from remote sources. With this plugin, we can write the Markdown for our content somewhere else, and use them on your Docusaurus site, without copying and pasting. This is something I am working on currently and trying to combine with GitHub action too.
+
+> Since the `Adding Multiple repository docs support feature` task was taking a lot of time so I moved to other work and I thought I will pick this up at last because this work needs a lot of time and research and I was not sure how to implement this feature.
+
+**NOTE:** Multiple repository docs support feature is not yet implemented completely and it is still in progress. As of now `Docs Multi-instance` support is added which is a`@docusaurus/plugin-content-docs` plugin. Still, we want some custom GitHub Action or automation to pull docs from multiple repositories and organize them in a new documentation site engine.
 
 ---
 
@@ -227,8 +273,6 @@ Issue link: [https://github.com/keptn-sandbox/new-keptn-docs-engine/issues/27](h
 
 #### Miscellaneous Phase
 
-**NOTE:** Multiple repository docs support feature is not yet implemented completely and it is still in progress. As of now `Docs Multi-instance` support is added which is a`@docusaurus/plugin-content-docs` plugin. Adding GitHub Action which can pull the docs from multiple repositories is not yet implemented.
-
 - Adding internationalization ([i18n](https://en.wikipedia.org/wiki/Internationalization_and_localization)) support. A possible translation strategy is to version control the translation files with Git (or any other VCS).
 
   > Discussion on this is done [here](https://keptn.slack.com/archives/C017T4KUAG3/p1657235519862879) and we have put this on lower priority.
@@ -276,7 +320,7 @@ The most challenging part was the `Adding Multiple repository docs support featu
 
 I am very glad that I had the opportunity to take part in the Google Summer of Code program. Participating in this program has helped me to:
 
-- Proper PoC and understanding are very important before starting the project or any feature and also we should have other alternatives before choosing the best one. This thing I got to learn when the `Adding Multiple repository docs support feature` was not implemented fully because I did not understand the feature properly. The problem with multiple repository docs support was at starting I thought we only need `Docusaurus Multi-instance support` which is the same as hosting multiple docs in a single docusaurus project but after that, I got to know that in addition to `Docusaurus Multi-instance support` we need to pull docs from other repositories and organize it in new documentation site engine. But again I was not sure where to pull docs from whether I have to pull from [https://github.com/keptn/keptn.github.io](https://github.com/keptn/keptn.github.io) repository or multiple repositories and combine and organize all docs to new documentation site engine. I discussed this with my mentors and I got clarity on this. We got to know a lot of ways we can implement this feature. Since it was taking a lot of time so I moved to other work and I thought I will pick this up at last because this work needs a lot of time and research and I was not sure how to implement this feature.
+- Proper PoC and understanding are very important before starting the project or any feature and also we should have other alternatives before choosing the best one. This thing I got to learn when the `Adding Multiple repository docs support feature` was not implemented fully because I did not understand the feature properly.
 - Learned about Keptn, Docusaurus, GitHub Actions, How to make good PRs, How to make proper commit messages, JavaScript XML(JSX), Keptn CLI, MDX, Writing proper documentation, etc.
 - Planning and structuring the requirements for the project and managing high-priority tasks and low-priority tasks.
 - How to work in a team and how to communicate with the team.
@@ -297,7 +341,7 @@ I am deeply grateful to my mentors [Indermohan Singh](https://github.com/imsingh
 - [https://keptn-docusaurus-poc.vercel.app/](https://keptn-docusaurus-poc.vercel.app/)
 - [https://keptn.sh/](https://keptn.sh/)
 - [Meetings](https://docs.google.com/document/d/1pgI0XW3T9wIix70OZsQ2F-9cGtLmXH1jkyhXm4v-RV0/edit#heading=h.xbcx68nc01mi)
-- [New Documentation Site Engine commmon Issue](https://github.com/keptn-sandbox/new-keptn-docs-engine/issues/1#phase-2)
+- [New Documentation Site Engine common Issue](https://github.com/keptn-sandbox/new-keptn-docs-engine/issues/1#phase-2)
 - [New Documentation Site Engine Issue link](https://github.com/keptn/keptn.github.io/issues/994)
 - [Project detail at Keptn Community repository](https://github.com/keptn/community/tree/main/mentorship/gsoc/2022/projects/new-docs-site-engine)
 - [Project page at GSoC 2022 website](https://summerofcode.withgoogle.com/programs/2022/projects/whEHkPZx)
