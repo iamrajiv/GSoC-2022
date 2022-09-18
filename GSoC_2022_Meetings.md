@@ -100,7 +100,7 @@ Meetings
   - TODO: Add expectations and comments around migrations in [keptn-sandbox#1](https://github.com/keptn-sandbox/new-keptn-docs-engine/issues/1)
 - Meg
   - [Questions around Vale](https://github.com/keptn-sandbox/new-keptn-docs-engine/issues/19#issuecomment-1219077675)
-  - To Rajiv: think of the final presentation as a presentation to the customers who know nothing about the docs engine
+  - To Rajiv: think of the final presentation as a presentation to the customers who know nothing about the documentation site engine
   - TODO: Add expectations and comments around migrations in [keptn-sandbox#1](https://github.com/keptn-sandbox/new-keptn-docs-engine/issues/1)
 - Indermohan
   - TODO: Add expectations and comments around migrations in [keptn-sandbox#1](https://github.com/keptn-sandbox/new-keptn-docs-engine/issues/1)
