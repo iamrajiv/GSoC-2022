@@ -18,10 +18,10 @@ Project Proposal
 - [Introduction](#introduction)
 - [Problem Statement](#problem-statement)
 - [Current Status of the Project](#current-status-of-the-project)
-- [Project scope & deliverables](#project-scope-&-deliverables)
+- [Project scope & deliverables](#project-scope-deliverables)
   - [Expected Deliverables](#expected-deliverables)
   - [Future work based on Project](#future-work-based-on-project)
-- [Brief description of my Solution & Implementation](#brief-description-of-my-solution--implementation)
+- [Brief description of my Solution & Implementation](#brief-description-of-my-solution-implementation)
   - [Multiple repository docs support](#multiple-repository-docs-support)
   - [Versioning of docs support](#versioning-of-docs-support)
 - [Project Timeline](#project-timeline)
@@ -76,7 +76,7 @@ I have decent experience in competitive programming and hence have a good unders
 
 This is the project proposal for the **New Documentation Site Engine** for Keptn on which I want to work as a part of Google Summer of Code 2022. I have proposed my timeline to complete this work in a span of **12 weeks**.
 
-Keptn is an event-driven orchestration engine for cloud-native apps. Started in 2018, it uses a declarative approach to automate delivery and operations so they can be scaled up to a large number of services. Keptn evaluates _Service Level Indicators (SLOs)_ and provides a dashboard, alerts, and auto-remediation for them. It also provides integrations with the Cloud Native ecosystem including _Prometheus_, _ArgoCD_, _CloudEvents_, _Backstage_, and many other cloud-native projects.
+Keptn is an event-driven orchestration engine for cloud-native apps. Started in 2018, it uses a declarative approach to automate delivery and operations so they can be scaled up to a large number of services. Keptn evaluates _Service Level Indicators (SLIs)_ against the _Service Level Objectives_ (SLOs) and provides a dashboard, alerts, and auto-remediation for them. It also provides integrations with the Cloud Native ecosystem including _Prometheus_, _ArgoCD_, _CloudEvents_, _Backstage_, and many other cloud-native projects.
 
 ## Problem Statement
 
@@ -123,8 +123,6 @@ After completion of the above deliverables, we can work on the following:
 - Improving UI of the documentation site.
 
 and many more.
-
-## Brief description of my Solution & Implementation
 
 I am going to propose a **New Documentation Site Engine** that will be based on [Docusaurus](https://docusaurus.io/). Docusaurus is an optimized site generator in React. Docusaurus helps you to move fast and write content. Build documentation websites, blogs, marketing pages, and more. Also, I have created a doc on a comparison between Antora & Docusaurus [here](https://docs.google.com/document/d/1R5i5Pc3cPLiePkTor__sRg90rXCQdRQBmIGRnm3PlZA/edit?usp=sharing).
 

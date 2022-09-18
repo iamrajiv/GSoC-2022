@@ -17,10 +17,10 @@ Project Link: [https://github.com/keptn-sandbox/new-keptn-docs-engine](https://g
 
 ## Table Of Contents
 
-- [GSoC 2022 Project Proposal](GSoC_2022_Project_Proposal.md)
-- [GSoC 2022 Project Report](GSoC_2022_Project_Report.md)
-- [GSoC 2022 Meetings](GSoC_2022_Meetings.md)
-- [GSoC 2022 Work Summary](GSoC_2022_Work_Summary.md)
+- [About](#about)
+- [Table Of Contents](#table-of-contents)
+- [References](#references)
+- [License](#license)
 
 ## References
 
