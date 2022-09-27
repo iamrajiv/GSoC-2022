@@ -13,6 +13,7 @@ Meetings
 
 ## Table of Contents
 
+- [19th September 2022](#19th-september-2022)
 - [12th September 2022](#12th-september-2022)
 - [6th September 2022](#6th-september-2022)
 - [29th August 2022](#29th-august-2022)
@@ -23,6 +24,34 @@ Meetings
 - [17th June 2022](#17th-june-2022)
 - [3rd June 2022](#3rd-june-2022)
 - [26th May 2022 (Kickoff meeting)](#26th-may-2022-kickoff-meeting)
+
+## 19th September 2022
+
+- Attendees
+  - Meg McRoberts
+  - Rajiv Ranjan Singh
+  - Suraj Banakar
+- Meg
+  - Is Rajiv going to continue after GSoC?
+  - Does Rajiv have everything needed to complete the report?
+    - No blockers to complete the report but there are some things we need to complete to call the project done.
+  - Needs more discussion around the first actual release about the docs
+    - What needs to be done to get the first release of the docs engine out?
+  - Feedback on the project
+    - Maybe we should’ve copied over more content to the docs engine.
+  - Thoughts on GSoC?
+    - Rajiv:
+      - Got to learn how to work with the community
+      - Wanted to finish the multi-repo support
+        - Should’ve spent some more time understanding the context
+          - Was thinking about too many things at once. Should’ve tried one thing at a time.
+        - Never saw multi-repo support in other projects
+      - Meg was always active and proactive in giving feedback
+      - Could have used more feedback around the multi-repo feature
+- Rajiv
+  - Review on [https://github.com/keptn/community/pull/167](https://github.com/keptn/community/pull/167)
+- Suraj
+  - State of the final report
 
 ## 12th September 2022
 
