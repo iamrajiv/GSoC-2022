@@ -13,8 +13,6 @@ New Documentation Site Engine
 
 This repository contains information about my work in the Google Summer of Code 2022. I participated with Keptn, and my project was on New Documentation Site Engine for Keptn.
 
-Project Link: [https://github.com/keptn-sandbox/new-keptn-docs-engine](https://github.com/keptn-sandbox/new-keptn-docs-engine)
-
 ## Table Of Contents
 
 - [GSoC 2022 Project Proposal](GSoC_2022_Project_Proposal.md)
